@@ -4,6 +4,8 @@ vcpkg_from_github(
     REF v5.75.0
     SHA512 2284e9dec15aee897592f3b0c67d86130d6ce486552d16f8461fbd80bb9828ce2f48142b246dbda80b2e18cd43fe5599f72a64b1afb37efb2b78faf19ef4cc3a
     HEAD_REF master
+    PATCHES
+        "add_x11extras.patch"
 )
 
 vcpkg_find_acquire_program(GETTEXT_MSGMERGE)
